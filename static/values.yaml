@@ -2,13 +2,14 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+namespace: dev
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: 730335381673.dkr.ecr.us-east-1.amazonaws.com/demo
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
