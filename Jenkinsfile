@@ -18,7 +18,7 @@ pipeline {
                 sh '''
                 cd static/
                 kubectl create ns dev
-                helm upgrade -i static-dev -n dev
+                helm upgrade -i static-dev static -n dev
                 '''
             }
         }
